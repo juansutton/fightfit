@@ -120,7 +120,7 @@ html.home{
 	float: left;
 	font-size: 13px;
 	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
+	border: 1px solid #ccc;
 	width: 256px;
 	outline: none;
 	letter-spacing: 1px;
@@ -130,7 +130,7 @@ html.home{
 	width: 143px;
 	background: #e14d43;
 	float: left;
-	height: 37px;
+	height: 36px;
 	line-height: 37px;
 	color: #FFF;
 	font-size: 13px;
@@ -314,7 +314,7 @@ html.home{
 }
 
 #refer .hero{
-	background: #494e52;
+	background: #AAA;
 	height: 391px;
 	overflow: hidden;
 }
@@ -704,8 +704,10 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 
 .fine-print{
-	color:#FFF;
-	font-size:10px;
+	padding-top: 42px;
+	padding-left: 4px;
+	color: #FFF;
+	font-size: 10px;
 
 }
 
