@@ -12,7 +12,7 @@
                     <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
                     <% twitter_message = "#fightfitbootcamps is coming! Excited for @joefightfit amazing kickboxing program." %>
                     <div class="social-links">
-                        <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Fight+Fit+Bootcamp" class="fb" target="_blank"></a>
+                        <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Fightfit" class="fb" target="_blank"></a>
                         <div class="sep"></div>
                         <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
                     </div>

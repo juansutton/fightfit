@@ -322,10 +322,10 @@ html.home{
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
-	background: url(/assets/refer/mammoth.png) 0 0 no-repeat;
+	background: url(/assets/refer/kickboxing3.jpg) 0 0 no-repeat;
 	background-size: 610px 394px;
 	overflow: hidden;
-	margin-top: 15px;
+	margin-left: -25px;
 	float: left;
 }
 
@@ -348,7 +348,7 @@ html.home{
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
-	margin-right: 60px;
+	margin-right: 56px;
 
 }
 
