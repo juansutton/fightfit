@@ -15,25 +15,25 @@ class User < ActiveRecord::Base
             'count' => 5,
             "html" => "Hand<br>Wraps",
             "class" => "two",
-            "image" =>  ActionController::Base.helpers.asset_path("refer/cream-tooltip@2x.png")
+            "image" =>  ActionController::Base.helpers.asset_path("refer/wraps.jpg")
         },
         {
             'count' => 10,
             "html" => "Water<br>Bottle",
             "class" => "three",
-            "image" => ActionController::Base.helpers.asset_path("refer/truman@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("refer/bottle.jpg")
         },
         {
             'count' => 25,
-            "html" => "Fight Fit<br>Beginner Package",
+            "html" => "Boxing<br>Gloves",
             "class" => "four",
-            "image" => ActionController::Base.helpers.asset_path("refer/winston@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("refer/gloves.jpg")
         },
         {
             'count' => 50,
             "html" => "One Month<br>of Membership",
             "class" => "five",
-            "image" => ActionController::Base.helpers.asset_path("refer/blade-explain@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("refer/1month.jpg")
         }
     ]
 

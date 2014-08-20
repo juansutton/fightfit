@@ -582,7 +582,7 @@ html.home{
 	border: 4px solid #e14d43;
 	position: absolute;
 	top: -285px;
-	left: -32px;
+	left: -65px;
 	display: none;
 	background: #FFF;
 }
@@ -643,6 +643,7 @@ html.home{
 /*
 	RETINA
 */
+/*
 @media only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -702,6 +703,7 @@ only screen and (min-device-pixel-ratio: 2) {
 		background-size: 16px 10px;
 	}
 }
+*/
 
 .fine-print{
 	padding-top: 42px;
