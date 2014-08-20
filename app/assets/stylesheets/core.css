@@ -31,11 +31,22 @@ form{
 /* Home */
 
 html.home{
-	background: #EDECEA;
+	background: url(/assets/halftone.png) center center repeat;
+}
+.main{
+	padding-top: 25px;
+	padding-bottom: 100px;
+	/*padding-top:50px;*/
+	background: url(/assets/halftone.png) center center repeat;
+
+}
+.centerfold{
+	background-color: #363b3f;
+
 }
 
 #home{
-	padding-bottom: 50px;
+	/*padding-bottom: 50px;*/
 }
 
 #home .page-content{
@@ -46,18 +57,20 @@ html.home{
 #home .hero{
 	width: 100%;
 	height: 446px;
-	background: url(/assets/home/hero.jpg) center center no-repeat;
-	background-size: 1600px 446px;
+	background: url(/assets/home/kickbox-darken.jpg) center center no-repeat;
+	background-size: 1240;
 	overflow: hidden;
 	position: relative;
 	letter-spacing: .09em;
 	margin: 0 auto;
+
+
 }
 
 #home .hero .large{
 	font-weight: bold;
 	font-size: 40px;
-	color: #074E6F;
+	color: #FFF;
 	text-transform: uppercase;
 	margin: 85px 0 0 136px;
 	position: relative;
@@ -67,7 +80,7 @@ html.home{
 
 #home .hero .small{
 	font-weight: bold;
-	color: #955F5D;
+	color: #FFF;
 	font-size: 18px;
 	margin: 10px 0 0 115px;
 	line-height: 30px;
@@ -96,7 +109,7 @@ html.home{
 #home .form-wrap .byline{
 	font-size: 15px;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #FFF;
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -115,7 +128,7 @@ html.home{
 
 #home .form-wrap .submit{
 	width: 143px;
-	background: #074E6F;
+	background: #e14d43;
 	float: left;
 	height: 37px;
 	line-height: 37px;
@@ -261,21 +274,21 @@ html.home{
 	position: relative;
 }
 
-#refer .header{
-	height: 50px;
-	background: #074E6F;
+.header-top{
+	height: 60px;
+	background: #363b3f;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
 	position: relative;
 }
 
-#refer .header .content{
-	width: 315px;
+.header .content{
+	/*width: 315px;*/
 	margin: 0 auto;
 }
 
-#refer .header p{
+.header p{
 	float: left;
 	color: #FFF;
 	font-weight: 500;
@@ -283,25 +296,25 @@ html.home{
 	line-height: 50px;
 }
 
-#refer .header .byline{
+.header .byline{
 	font-size: 14px;
 }
 
-#refer .header .logo{
+.header .logo{
 	font-weight: normal;
 	font-size: 0;
 	line-height: 0;
 	margin-right: 14px;
 	letter-spacing: 1px;
-	background: url(/assets/refer/logo.png) 0 0 no-repeat;
-	background-size: 106px 19px;
-	height: 19px;
+	background: url(/assets/fight-fit.png) 0 0 no-repeat;
+	background-size: 106px 50px;
+	height: 50px;
 	width: 106px;
 	margin-top: 15px;
 }
 
 #refer .hero{
-	background: #F1F0EE;
+	background: #494e52;
 	height: 391px;
 	overflow: hidden;
 }
@@ -318,15 +331,15 @@ html.home{
 
 #refer .mammoth .need{
 	color: #FFF;
-	font-size: 38px;
+	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: bold;
 	margin: 102px 0 0 72px;
 	display: block;
-	line-height: 56px;
+	line-height: 38px;
 	letter-spacing: 4px;
 	text-align: center;
-	width: 284px;
+	width: 500px;
 }
 
 #refer .share-wrap{
@@ -336,11 +349,12 @@ html.home{
 	text-transform: uppercase;
 	letter-spacing: .13em;
 	margin-right: 60px;
+
 }
 
 #refer .share-wrap .why{
 	font-size: 16px;
-	color: #555556;
+	color: #FFF;
 	font-weight: bold;
 	margin-top: 42px;
 }
@@ -350,13 +364,13 @@ html.home{
 	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: #e14d43;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
 
 #refer .share-wrap .subtitle{
-	color: #565656;
+	color: #FFF;
 	font-size: 14px;
 	text-transform: none;
 	margin-top: 15px;
@@ -408,7 +422,7 @@ html.home{
 	width: 100%;
 	background: #FFF;
 	border-top: 1px solid #D2D1C8;
-	padding-bottom: 100px;
+	padding-bottom: 25px;
 }
 
 #refer .prizes .page-content{
@@ -558,11 +572,15 @@ html.home{
 	background: #074E6F;
 	border-color: #074E6F;
 }
+	.tooltip{
+
+	 opacity: 100 !important; 
+	}
 
 #refer .prizes .products li.product .tooltip{
 	height: 254px;
 	width: 190px;
-	border: 4px solid #074E6F;
+	border: 4px solid #494e52;
 	position: absolute;
 	top: -285px;
 	left: -32px;
@@ -686,19 +704,15 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 }
 
+.fine-print{
+	color:#FFF;
+	font-size:10px;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.header-bg{
+	background-color: #363b3f;
+}
 
 
 

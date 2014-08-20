@@ -22,10 +22,24 @@
         <% end %>
         <%= stylesheet_link_tag "core.css", :media => "all" %>
         <%= csrf_meta_tags %>
+                <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 </head>
 <body id="<%= @bodyId %>">
-
-<%= yield %>
+    <div class="main">
+        <div class="container header-bg">
+            <div class="header">
+                <div class="content">
+                    <p class="logo brandon">FIGHTFIT</p>
+                </div>
+            </div>
+        </div>
+        <%= yield %>
+    </div>
+</body>
 
 
 </body>
