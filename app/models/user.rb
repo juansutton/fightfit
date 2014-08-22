@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+
     belongs_to :referrer, :class_name => "User", :foreign_key => "referrer_id"
     has_many :referrals, :class_name => "User", :foreign_key => "referrer_id"
     
@@ -9,7 +10,7 @@ class User < ActiveRecord::Base
     validates :referral_code, :uniqueness => true
 
     before_create :create_referral_code
-    after_create :send_welcome_email
+    after_create :add_to_infusionsoft
 
     REFERRAL_STEPS = [
         {
@@ -54,5 +55,9 @@ class User < ActiveRecord::Base
 
     def send_welcome_email
         UserMailer.delay.signup_email(self)
+    end
+
+    def add_to_infusionsoft
+        Infusionsoft.contact_add({:FirstName => self.first_name, :ReferralCode => self.referral_code ,:Email => self.email})
     end
 end

@@ -30,6 +30,8 @@ group :development do
   gem 'pry'
 end
 
+gem 'infusionsoft'
+
 gem 'delayed_job_active_record'
 
 gem 'unicorn'
