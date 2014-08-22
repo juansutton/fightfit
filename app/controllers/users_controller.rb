@@ -36,7 +36,7 @@ class UsersController < ApplicationController
             end
 
             @user = User.new(:email => params[:user][:email])
-
+            @user.first_name = params[:user][:first_name]
             @referred_by = User.find_by_referral_code(cookies[:h_ref])
 
             puts '------------'

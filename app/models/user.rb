@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
     has_many :referrals, :class_name => "User", :foreign_key => "referrer_id"
     
     attr_accessible :email
+    attr_accessible :first_name
 
     validates :email, :uniqueness => true, :format => { :with => /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/i, :message => "Invalid email format." }
     validates :referral_code, :uniqueness => true
