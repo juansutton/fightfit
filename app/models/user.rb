@@ -59,5 +59,6 @@ class User < ActiveRecord::Base
 
     def add_to_infusionsoft
         Infusionsoft.contact_add({:FirstName => self.first_name, :ReferralCode => self.referral_code ,:Email => self.email})
+        Infusionsoft.email_optin(self.email, "Opted In through Prelaunchr")
     end
 end
