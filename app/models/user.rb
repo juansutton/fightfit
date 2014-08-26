@@ -58,7 +58,9 @@ class User < ActiveRecord::Base
     end
 
     def add_to_infusionsoft
-        Infusionsoft.contact_add({:FirstName => self.first_name, :ReferralCode => self.referral_code ,:Email => self.email})
+        group_id = 110 #110 is the tag id for Stouville
+        contact_Id = Infusionsoft.contact_add({:FirstName => self.first_name, :ReferralCode => self.referral_code ,:Email => self.email})
+        Infusionsoft.contact_add_to_group(contact_id, group_id)
         Infusionsoft.email_optin(self.email, "Opted In through Prelaunchr")
     end
 end
