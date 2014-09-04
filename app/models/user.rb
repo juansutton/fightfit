@@ -33,9 +33,9 @@ class User < ActiveRecord::Base
         },
         {
             'count' => 50,
-            "html" => "One Month<br>of Membership",
+            "html" => "One Year<br>of Membership",
             "class" => "five",
-            "image" => ActionController::Base.helpers.asset_path("refer/1month.jpg")
+            "image" => ActionController::Base.helpers.asset_path("refer/1year.jpg")
         }
     ]
 
