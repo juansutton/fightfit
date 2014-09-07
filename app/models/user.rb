@@ -64,5 +64,6 @@ class User < ActiveRecord::Base
         Infusionsoft.email_optin(self.email, "Opted In through Prelaunchr")
         Infusionsoft.contact_add_to_group(contact_id, group_id)
         Infusionsoft.contact_add_to_group(contact_id, group_id_2)
+        Infusionsoft.funnel_achieve_goal(<Integration value from API goal in CB>, <call_name value from same>, contact_id)
     end
 end
